@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Marck Script';
+    src: url('MarckScript-Regular.woff2') format('woff2'),
+        url('MarckScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik Puddles';
+    src: url('RubikPuddles-Regular.woff2') format('woff2'),
+        url('RubikPuddles-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

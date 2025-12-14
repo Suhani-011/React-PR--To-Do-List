@@ -1,0 +1,154 @@
+body {
+    background-image: url("../src/assets/images/bg.png");
+    background-size: cover;        
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: "Marck Script", cursive;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.15);
+    z-index: -1;
+}
+.card {
+    width: 400px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(18px);
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow:0 20px 50px rgba(0, 0, 0, 0.35);
+}
+.title{
+    font-family: "Rubik Puddles", system-ui;
+    color: #25214c;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+input{
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+input, select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.6);
+}
+.priority{
+    font-family:'Courier New', Courier, monospace;
+}
+.task-btn {
+    background: linear-gradient(135deg, #9b7cff, #ff7bbf);
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    white-space: nowrap;
+    font-weight: 500;
+    cursor: pointer;
+}
+.task-btn:hover {
+    opacity: 0.9;
+}
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+.priority {
+  appearance: none;
+  cursor: pointer;
+}
+.select-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #25214c;
+  pointer-events: none;
+}
+.priority-chip {
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-weight: 600;
+}
+.priority-high {
+  background: linear-gradient(135deg, #ff8fa3, #ff6fae);
+  color: #4b3c8a;
+}
+.priority-medium {
+  background: linear-gradient(135deg, #fbc2a4, #f7a072);
+  color: #4b3c8a;
+}
+.priority-low {
+  background: linear-gradient(135deg, #9fdac5, #6fcf97);
+  color: #4b3c8a;
+}
+.todo-list li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+.task-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.task-left {
+  color: #25214c;
+  font-family:cursive;
+}
+.task-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.priority-chip {
+  border-radius: 18px;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.btn-edit,
+.btn-delete {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-edit {
+  background: rgba(155, 124, 255, 0.25);
+  color: #4b3c8a;
+}
+.btn-edit:hover {
+  background: rgba(155, 124, 255, 0.4);
+}
+.btn-delete {
+  background: rgba(255, 107, 107, 0.25);
+  color: #7a1c1c;
+}
+.btn-delete:hover {
+  background: rgba(255, 107, 107, 0.4);
+}
+
+
+
